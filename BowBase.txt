@@ -3,14 +3,14 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
 
-namespace ItemAdditions.Items
+namespace CodeBase.Items
 {
-	public class ObsidianBow : ModItem
+	public class BowBase : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Obsidian Bow");
-			Tooltip.SetDefault("A great easy mode bow.");
+			DisplayName.SetDefault("Base Bow");
+			Tooltip.SetDefault("'hmm, I guess you learned something.'");
 		}
 
 		public override void SetDefaults()
