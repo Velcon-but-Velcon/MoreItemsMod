@@ -5,14 +5,14 @@ using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
-namespace ItemAdditions.Items
+namespace CodeBase.Items
 {
-	public class ScytheBee : ModItem
+	public class WeaponBase : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Hornet Scythe");
-			Tooltip.SetDefault("The strongest weapon before the wall.");
+			DisplayName.SetDefault("Base Melee Weapon");
+			Tooltip.SetDefault("'hmm, yes I guess you've learned something.'");
 		}
 
 		public override void SetDefaults()
@@ -31,16 +31,15 @@ namespace ItemAdditions.Items
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 			item.useTurn = true;
-			item.shoot = ProjectileID.DeathSickle;
+			item.shoot = ProjectileID.SwordBeam;
 			item.shootSpeed = 10f;
 		}
 
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Obsidian, 50);
-			recipe.AddIngredient(ItemID.BeeWax, 25);
-			recipe.AddTile(TileID.Anvils);
+			recipe.AddIngredient(ItemID.Wood, 50);
+			recipe.AddTile(TileID.DemonAltar);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
