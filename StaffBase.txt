@@ -5,14 +5,14 @@ using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
-namespace ItemAdditions.Items
+namespace CodeBase.Items
 {
-	public class GenericWand : ModItem
+	public class WandBase : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Wooden Wand");
-			Tooltip.SetDefault("A great easy mode wand.");
+			DisplayName.SetDefault("Wand Base");
+			Tooltip.SetDefault("'hmm, yes I guess you've learned.'");
 		}
 
 		public override void SetDefaults()
@@ -36,7 +36,6 @@ namespace ItemAdditions.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Wood, 100);
 			recipe.AddIngredient(ItemID.ManaCrystal, 5);
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
