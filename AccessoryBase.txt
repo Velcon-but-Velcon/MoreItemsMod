@@ -9,7 +9,7 @@ namespace CodeBase.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Base Accessory");
-			Tooltip.SetDefault("Hmm, yes you've learned.");
+			Tooltip.SetDefault("'Hmm, yes you've learned.'");
 		}
 
 		public override void SetDefaults()
