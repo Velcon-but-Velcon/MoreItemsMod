@@ -1,7 +1,6 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
-
 namespace CodeBase.Items
 {
 	public class BowBase : ModItem
