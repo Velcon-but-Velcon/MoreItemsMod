@@ -1,2 +1,2 @@
 # MoreItemsMod
-Idk just stuff to help new programmers with example code of items that I know... Also a comment section for the mod...
+Part of the mod, I don't update this much.
