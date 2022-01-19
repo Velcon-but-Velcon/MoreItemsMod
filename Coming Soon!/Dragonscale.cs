@@ -12,7 +12,7 @@ namespace ItemAdditions.Items.Dragonscale
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Dragon Scale");
-			Tooltip.SetDefault("'The scale of a dragon, a long time ago.'");
+			Tooltip.SetDefault("'The scale of a dragon, created long ago.'");
 		}
 
 		public override void SetDefaults()
